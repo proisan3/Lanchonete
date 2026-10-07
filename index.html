@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lanchonete Mão na Massa | Hambúrgueres artesanais</title>
+  <meta name="description" content="Lanchonete Mão na Massa: hambúrgueres artesanais com ingredientes selecionados. Veja o cardápio e peça pelo WhatsApp.">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:title" content="Lanchonete Mão na Massa">
+  <meta property="og:description" content="Hambúrguer de verdade é feito na mão. Peça pelo WhatsApp.">
+  <meta property="og:image" content="assets/images/hamburguer-artesanal.jpg">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header" id="topo">
+    <div class="container header__in">
+      <a href="#inicio" class="brand" aria-label="Mão na Massa, início">
+        <img src="assets/images/logo.jpg" alt="Logo da Lanchonete Mão na Massa" width="44" height="44">
+        <span>MÃO NA MASSA</span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#hamburgueres">Hambúrgueres</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--red nav__cta" data-whatsapp href="#">Pedir pelo WhatsApp</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero__in">
+        <div class="hero__txt">
+          <h1>HAMBÚRGUER DE VERDADE É FEITO NA MÃO.</h1>
+          <p>Ingredientes selecionados, hambúrgueres caprichados e muito sabor em cada mordida.</p>
+          <div class="hero__btns">
+            <a class="btn btn--red" href="#cardapio">VER HAMBÚRGUERES</a>
+            <a class="btn btn--line" data-whatsapp href="#">PEDIR PELO WHATSAPP</a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <img src="assets/images/hamburguer-artesanal.jpg" alt="Dois hambúrgueres artesanais com queijo, bacon e cebola roxa na chapa" width="1080" height="1080" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="hamburgueres">
+      <div class="container">
+        <h2>OS MAIS PEDIDOS</h2>
+        <div class="grid grid--4" id="destaques"></div>
+      </div>
+    </section>
+
+    <section class="sec sec--dark" id="cardapio">
+      <div class="container">
+        <h2>NOSSO CARDÁPIO</h2>
+        <p class="sec__sub">Valores de demonstração. Confirme preços e disponibilidade pelo WhatsApp.</p>
+        <div class="grid grid--3" id="cardapio-lista"></div>
+      </div>
+    </section>
+
+    <section class="sec" id="diferenciais">
+      <div class="container">
+        <h2>POR QUE MÃO NA MASSA?</h2>
+        <ul class="grid grid--4 feats">
+          <li><span aria-hidden="true">🔥</span><h3>Preparado com cuidado</h3><p>Cada hambúrguer é montado com atenção, do pão ao molho.</p></li>
+          <li><span aria-hidden="true">🥩</span><h3>Carne selecionada</h3><p>Hambúrguer artesanal com sabor de verdade.</p></li>
+          <li><span aria-hidden="true">🧀</span><h3>Ingredientes de qualidade</h3><p>Queijo, bacon e vegetais escolhidos com critério.</p></li>
+          <li><span aria-hidden="true">❤️</span><h3>Muito sabor</h3><p>Em cada pedido, a mesma dedicação.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec sec--dark" id="sobre">
+      <div class="container about">
+        <div class="about__img">
+          <img src="assets/images/hamburguer-preparo.jpg" alt="Hambúrgueres sendo preparados na chapa" width="1080" height="520" loading="lazy">
+        </div>
+        <div>
+          <h2>FEITO NA MÃO. FEITO COM SABOR.</h2>
+          <!-- TEXTO EDITÁVEL: troque pela história real da lanchonete -->
+          <p>A Lanchonete Mão na Massa é feita para quem gosta de hambúrguer de verdade. Aqui o foco é um só: montar hambúrgueres caprichados, com ingredientes selecionados e muito sabor.</p>
+          <p>Escolha o seu no cardápio e faça o pedido direto pelo WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="galeria">
+      <div class="container">
+        <h2>GALERIA</h2>
+        <div class="gallery">
+          <figure class="g1"><img src="assets/images/hamburguer-artesanal.jpg" alt="Hambúrguer artesanal" loading="lazy"></figure>
+          <figure><img src="assets/images/hamburguer-bacon.jpg" alt="Hambúrguer com bacon e cebola roxa" loading="lazy"></figure>
+          <figure><img src="assets/images/hamburguer-cheddar.jpg" alt="Hambúrguer com cheddar" loading="lazy"></figure>
+          <figure><img src="assets/images/hamburguer-chapa.jpg" alt="Hambúrguer duplo com queijo" loading="lazy"></figure>
+          <figure><img src="assets/images/hamburguer-preparo.jpg" alt="Hambúrguer sendo preparado" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--dark" id="depoimentos">
+      <div class="container">
+        <h2>QUEM PROVA, APROVA</h2>
+        <!-- DEPOIMENTOS FICTÍCIOS DE DEMONSTRAÇÃO: edite ou substitua por depoimentos reais -->
+        <div class="grid grid--3">
+          <blockquote><p>“Hambúrguer bem montado e muito saboroso. Já virou pedido de toda semana.”</p><cite>Cliente (exemplo)</cite></blockquote>
+          <blockquote><p>“O pedido pelo WhatsApp é rápido e fácil. Chegou tudo certinho.”</p><cite>Cliente (exemplo)</cite></blockquote>
+          <blockquote><p>“O Duplo é enorme e cheio de sabor. Recomendo.”</p><cite>Cliente (exemplo)</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="contato">
+      <div class="container contact">
+        <h2>DEU FOME?</h2>
+        <p class="sec__sub">Faça seu pedido pelo WhatsApp.</p>
+        <a class="btn btn--red btn--big" data-whatsapp href="#">PEDIR PELO WHATSAPP</a>
+        <!-- CAMPOS EDITÁVEIS: preencha em script.js (CONFIG) -->
+        <ul class="info">
+          <li><span aria-hidden="true">📍</span><b>Endereço</b><em id="info-endereco"></em></li>
+          <li><span aria-hidden="true">📱</span><b>WhatsApp</b><em id="info-whatsapp"></em></li>
+          <li><span aria-hidden="true">📷</span><b>Instagram</b><em id="info-instagram"></em></li>
+          <li><span aria-hidden="true">🕐</span><b>Horário</b><em id="info-horario"></em></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>SEU PRÓXIMO HAMBÚRGUER ESTÁ AQUI.</h2>
+        <a class="btn btn--cream btn--big" data-whatsapp href="#">FAZER MEU PEDIDO</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <div>
+        <strong>MÃO NA MASSA</strong>
+        <p>Hambúrgueres artesanais</p>
+      </div>
+      <ul>
+        <li>Instagram: <span id="foot-instagram"></span></li>
+        <li>WhatsApp: <span id="foot-whatsapp"></span></li>
+        <li>Endereço: <span id="foot-endereco"></span></li>
+      </ul>
+    </div>
+    <p class="footer__copy">© 2026 Lanchonete Mão na Massa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
